@@ -1,0 +1,21 @@
+# Python / uv
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.env
+wandb/settings
+
+# Experiment artifacts (keep in W&B or Google Drive, never in git)
+wandb/
+checkpoints/
+outputs/
+data/*.txt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
