@@ -19,3 +19,5 @@ data/*.txt
 *.bin
 *.safetensors
 *.gguf
+data/*.txt
+data/*.parquet
