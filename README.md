@@ -6,7 +6,7 @@ Phase 1 goes from *watching* a GPT being built, to *building* our own, to *adapt
 
 | Stage | Format | Content | Code |
 |---|---|---|---|
-| **Preparation** | Solo practice | Karpathy video, Attention paper, Colab notebook, ng-video-lecture, nanoGPT README | Karpathy's, Shakespeare |
+| **Preparation** | Solo practice | [Karpathy video](https://www.youtube.com/watch?v=kCc8FmEb1nY), [Attention paper](https://arxiv.org/abs/1706.03762), [Colab notebook](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing), [ng-video-lecture](https://github.com/karpathy/ng-video-lecture), [nanoGPT](https://github.com/karpathy/nanoGPT) | Karpathy's, Shakespeare |
 | **1.1a** | Webinar, live coding | Data → bigram → attention trick → self-attention (paper §3.2) | Our improved notebook |
 | **1.1b** | Webinar, live coding | Multi-head → Block → full GPT → training (paper §3.1, 3.3, 3.5) | Our improved notebook |
 | **1.2** | Webinar + build | **Serious nanoGPT**: our own Shaer-GPT with nanoGPT-quality training code, nanoGPT as the answer key | Ours, Arabic |
@@ -14,6 +14,17 @@ Phase 1 goes from *watching* a GPT being built, to *building* our own, to *adapt
 | **Gate 1** | Review | Shaer-GPT demo + the fine-tuning comparison table | — |
 
 Concepts for every stage: **[CONCEPTS.md](CONCEPTS.md)**. Each idea comes with its formula, an example, and how OpenAI, Google, Anthropic, Qwen and DeepSeek do it.
+
+## Quick links
+
+| | Resource | Link |
+|---|---|---|
+| 🎥 | Karpathy, “Let's build GPT: from scratch, in code, spelled out” | https://www.youtube.com/watch?v=kCc8FmEb1nY |
+| 📄 | Attention Is All You Need (Vaswani et al., 2017) | https://arxiv.org/abs/1706.03762 |
+| 📓 | Karpathy's Colab notebook from the video | https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing |
+| 💻 | ng-video-lecture: the finished code from the video | https://github.com/karpathy/ng-video-lecture |
+| 💻 | nanoGPT: the serious version, used in 1.2 | https://github.com/karpathy/nanoGPT |
+| 📘 | Our concepts guide | [CONCEPTS.md](CONCEPTS.md) |
 
 **Status:** 🟡 Preparation in progress. Stage 1.1a starts once preparation is complete.
 
