@@ -356,7 +356,7 @@ Attention(Q, K, V) = softmax( Q·Kᵀ / √d_k  + mask ) · V
 
 ## Sources
 
-**Foundations:** [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Google, 2017) · Karpathy, [Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+**Foundations:** [Attention Is All You Need](https://arxiv.org/html/1706.03762v7) (Google, 2017) · Karpathy, [Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY)
 
 **OpenAI:** [GPT-2 paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) · [GPT-3](https://arxiv.org/abs/2005.14165) · [gpt-oss](https://openai.com/index/introducing-gpt-oss/) · [tiktoken](https://github.com/openai/tiktoken)
 

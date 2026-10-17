@@ -6,7 +6,7 @@ Phase 1 goes from *watching* a GPT being built, to *building* our own, to *adapt
 
 | Stage | Format | Content | Code |
 |---|---|---|---|
-| **Preparation** | Solo practice | [Karpathy video](https://www.youtube.com/watch?v=kCc8FmEb1nY), [Attention paper](https://arxiv.org/abs/1706.03762), [Colab notebook](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing), [ng-video-lecture](https://github.com/karpathy/ng-video-lecture), [nanoGPT](https://github.com/karpathy/nanoGPT) | Karpathy's, Shakespeare |
+| **Preparation** | Solo practice | [Karpathy video](https://www.youtube.com/watch?v=kCc8FmEb1nY), [Attention paper](https://arxiv.org/html/1706.03762v7), [Colab notebook](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing), [ng-video-lecture](https://github.com/karpathy/ng-video-lecture), [nanoGPT](https://github.com/karpathy/nanoGPT) | Karpathy's, Shakespeare |
 | **1.1a** | Webinar, live coding | Data → bigram → attention trick → self-attention (paper §3.2) | Our improved notebook |
 | **1.1b** | Webinar, live coding | Multi-head → Block → full GPT → training (paper §3.1, 3.3, 3.5) | Our improved notebook |
 | **1.2** | Webinar + build | **Serious nanoGPT**: our own Shaer-GPT with nanoGPT-quality training code, nanoGPT as the answer key | Ours, Arabic |
@@ -20,7 +20,7 @@ Concepts for every stage: **[CONCEPTS.md](CONCEPTS.md)**. Each idea comes with i
 | | Resource | Link |
 |---|---|---|
 | 🎥 | Karpathy, “Let's build GPT: from scratch, in code, spelled out” | https://www.youtube.com/watch?v=kCc8FmEb1nY |
-| 📄 | Attention Is All You Need (Vaswani et al., 2017) | https://arxiv.org/abs/1706.03762 |
+| 📄 | Attention Is All You Need (Vaswani et al., 2017) | https://arxiv.org/html/1706.03762v7 |
 | 📓 | Karpathy's Colab notebook from the video | https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing |
 | 💻 | ng-video-lecture: the finished code from the video | https://github.com/karpathy/ng-video-lecture |
 | 💻 | nanoGPT: the serious version, used in 1.2 | https://github.com/karpathy/nanoGPT |
@@ -37,7 +37,7 @@ Do these in order. They're the same GPT at three levels of detail. Use Karpathy'
 | # | Resource | What to do | Done when |
 |---|---|---|---|
 | 1 | Karpathy, [“Let's build GPT”](https://www.youtube.com/watch?v=kCc8FmEb1nY) (about 2 h) | Watch end to end, pausing where needed | You can sketch the model diagram from memory |
-| 2 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | Read §3 (Model Architecture), especially §3.2 (Attention) and Figure 1 | You can write `softmax(QKᵀ/√d_k)·V` and explain each term |
+| 2 | [Attention Is All You Need](https://arxiv.org/html/1706.03762v7) | Read §3 (Model Architecture), especially §3.2 (Attention) and Figure 1 | You can write `softmax(QKᵀ/√d_k)·V` and explain each term |
 | 3 | [Colab notebook](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing) | **File → Save a copy in Drive**; set Runtime → **T4 GPU**; run each cell alongside the matching part of the video | Every cell runs and you can say what each one does |
 | 4 | [ng-video-lecture](https://github.com/karpathy/ng-video-lecture) | Run `bigram.py`, then `gpt.py`, on Colab (commands below) | `gpt.py` reaches val loss about 1.5 and prints Shakespeare-like text |
 | 5 | [nanoGPT](https://github.com/karpathy/nanoGPT) | Read the README; skim `model.py` and `train.py` | You know which file does what (we use it properly in 1.2) |
