@@ -13,11 +13,11 @@ wandb/settings
 wandb/
 checkpoints/
 outputs/
-data/*.txt
 *.pt
 *.pth
 *.bin
 *.safetensors
 *.gguf
-data/*.txt
-data/*.parquet
+**/data/*.txt
+**/data/*.parquet
+*.parquet
