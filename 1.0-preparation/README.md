@@ -63,6 +63,8 @@ The model trained in this notebook is wrapped in a small chat app: **[ndim-labs/
 | **Run it** | `pip install -r requirements.txt`, then `streamlit run app.py` (GPU if available, otherwise CPU) |
 | **What to expect** | It *continues* text in Shakespeare's style. It isn't a real assistant: it's not instruction-tuned and only sees the last 32 characters |
 
+**Use it as the session opener:** [DEMO.md](https://github.com/ndim-labs/shakespeare_gpt_v1/blob/main/DEMO.md) has a 10-minute click-by-click script. The app's four tabs (what it can see → text to numbers → next-character guess → one character at a time) each preview a concept this session teaches.
+
 **Why show it in the session:** it makes the jump from "a loss curve" to "a product" tangible, and it shows the limits honestly. Making it actually *answer* questions needs **instruction tuning**, which is Phase 2 (SFT).
 
 ## Paper reading map: Attention Is All You Need
