@@ -52,6 +52,19 @@ Small scores give a spread-out softmax (left); large scores give nearly one-hot 
 ![GPT train vs val loss](images/5_gpt_train_val_loss.png)
 The GPT (4 layers, 4 heads, 0.21M parameters) breaks through the bigram's 2.5 limit and reaches **val loss about 1.82** in 5,000 steps. The growing gap between the curves is the first sign of memorizing. Karpathy's full-size `gpt.py` (10.7M parameters, dropout 0.2) reaches about 1.48.
 
+## Bonus: from notebook to chatbot
+
+The model trained in this notebook is wrapped in a small chat app: **[ndim-labs/shakespeare_gpt_v1](https://github.com/ndim-labs/shakespeare_gpt_v1)**.
+
+| | |
+|---|---|
+| **What it is** | A Streamlit chat interface around the notebook's final GPT (4 layers, 4 heads, 64 dims, 0.21M parameters) |
+| **How it connects** | The notebook's last cell saves `shakespeare_gpt_v1.pth` (weights + vocabulary); the app rebuilds the same architecture and loads it |
+| **Run it** | `pip install -r requirements.txt`, then `streamlit run app.py` (GPU if available, otherwise CPU) |
+| **What to expect** | It *continues* text in Shakespeare's style. It isn't a real assistant: it's not instruction-tuned and only sees the last 32 characters |
+
+**Why show it in the session:** it makes the jump from "a loss curve" to "a product" tangible, and it shows the limits honestly. Making it actually *answer* questions needs **instruction tuning**, which is Phase 2 (SFT).
+
 ## Paper reading map: Attention Is All You Need
 
 | Section | What to take from it | Covered in |
