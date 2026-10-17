@@ -13,7 +13,7 @@ Phase 1 goes from *understanding* a GPT, to *building* our own, to *adapting* a 
 | **1.3** | [`1.3-lora-qlora/`](1.3-lora-qlora/) | Webinar + build | Full fine-tune vs LoRA vs QLoRA on Qwen 0.5B: the bridge to Phase 2 | Hugging Face `peft` |
 | **Gate 1** | — | Review | Shaer-GPT demo + fine-tuning comparison table | — |
 
-**Status:** ✅ Organizer's solo preparation complete · 🟡 next: **1.0 session**
+**Status:** ✅ Organizer's solo preparation complete · ✅ 1.0 notebook annotated, with [charts](1.0-preparation/README.md#what-youll-see-charts-from-the-notebook) · 🟡 next: **1.0 session**
 
 Concepts for every stage: **[CONCEPTS.md](CONCEPTS.md)**. Each idea comes with its formula, an example, and how OpenAI, Google, Anthropic, Qwen and DeepSeek do it.
 
@@ -35,7 +35,7 @@ Concepts for every stage: **[CONCEPTS.md](CONCEPTS.md)**. Each idea comes with i
 ```
 p1-gpt-from-scratch/
 ├── CONCEPTS.md                 # concepts guide for all stages
-├── 1.0-preparation/            # session plan + gpt_dev.ipynb (Karpathy's notebook)
+├── 1.0-preparation/            # session plan + gpt_dev.ipynb (annotated) + images/ (charts)
 ├── 1.1a-data-to-attention/     # live-coding notebook (to be prepared)
 ├── 1.1b-transformer/           # live-coding notebook (to be prepared)
 ├── 1.2-shaer-gpt/              # our own code: data/ (Arabic poetry prep) + src/

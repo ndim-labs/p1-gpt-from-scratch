@@ -28,6 +28,30 @@ Each block: **concept → paper → run the notebook cells**.
 
 **Presenter tip:** the cells that train models take minutes. Run them before the session, or start them at the beginning of a block and talk while they train.
 
+## What you'll see: charts from the notebook
+
+These come from a full run of [`gpt_dev.ipynb`](gpt_dev.ipynb). The notebook saves the same charts in its outputs.
+
+### 1 · Bigram model: training vs validation loss
+![Bigram loss](images/1_bigram_loss.png)
+Loss falls from about 4.7 and gets stuck at **about 2.5**. Training and validation stay together, so the model isn't memorizing: it's just too simple. With one character of memory, it can't form words.
+
+### 2 · Averaging weights: "the past only, equal weights"
+![Averaging weights](images/2_averaging_weights.png)
+Row *t* spreads its weight equally over positions 0…*t*. Zeros above the diagonal mean no peeking at the future.
+
+### 3 · Self-attention weights
+![Attention weights](images/3_attention_weights.png)
+Same triangle, but now the weights **depend on the data**: some past positions matter much more than others. This is attention (paper §3.2.1).
+
+### 4 · Why divide by √d
+![Softmax scaling](images/4_softmax_scaling.png)
+Small scores give a spread-out softmax (left); large scores give nearly one-hot (right), and learning stalls. Dividing by √d_k keeps the scores small.
+
+### 5 · Full GPT: training vs validation loss
+![GPT train vs val loss](images/5_gpt_train_val_loss.png)
+The GPT (4 layers, 4 heads, 0.21M parameters) breaks through the bigram's 2.5 limit and reaches **val loss about 1.82** in 5,000 steps. The growing gap between the curves is the first sign of memorizing. Karpathy's full-size `gpt.py` (10.7M parameters, dropout 0.2) reaches about 1.48.
+
 ## Paper reading map: Attention Is All You Need
 
 | Section | What to take from it | Covered in |
