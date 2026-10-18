@@ -21,3 +21,7 @@ outputs/
 **/data/*.txt
 **/data/*.parquet
 *.parquet
+
+# Private speaker notes: never commit
+Speaker-Notes*.pdf
+**/Speaker-Notes*
